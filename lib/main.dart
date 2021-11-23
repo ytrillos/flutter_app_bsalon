@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_bsalon/forgot.dart';
 import 'package:flutter_app_bsalon/home.dart';
 import 'package:flutter_app_bsalon/login.dart';
 import 'package:flutter_app_bsalon/logout.dart';
@@ -11,9 +12,22 @@ void main() {
     theme: ThemeData(primaryColor: Colors.green),
     initialRoute: '/login',
     getPages: [
-      GetPage(name: '/login', page: () => const Login()),
-      GetPage(name: '/register', page: () => const Register()),
-      GetPage(name: '/logout', page: () => const Logout()),
+      GetPage(
+          name: '/login',
+          page: () => const Login(),
+          transition: Transition.zoom),
+      GetPage(
+          name: '/register',
+          page: () => const Register(),
+          transition: Transition.zoom),
+      GetPage(
+          name: '/logout',
+          page: () => const Logout(),
+          transition: Transition.zoom),
+      GetPage(
+          name: '/forgot',
+          page: () => const Forgot(),
+          transition: Transition.zoom),
       GetPage(
           name: '/home', page: () => const Home(), transition: Transition.zoom),
     ],

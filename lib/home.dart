@@ -9,12 +9,18 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Home')),
       body: Center(
-        child: ElevatedButton(
-            child: const Text('Logout'),
-            onPressed: () {
-              Get.offNamed('/logout');
-            }),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[const Text('Hola')],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: addText(),
+        tooltip: 'Increment',
+        child: const Icon(Icons.add),
       ),
     );
   }
+
+  addText() {}
 }

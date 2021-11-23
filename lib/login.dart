@@ -39,7 +39,6 @@ class _LoginState extends State<Login> {
             const Padding(
               padding:
                   EdgeInsets.only(left: 15.0, right: 15.0, top: 15, bottom: 0),
-              //padding: EdgeInsets.symmetric(horizontal: 15),
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
@@ -50,7 +49,7 @@ class _LoginState extends State<Login> {
             ),
             TextButton(
               onPressed: () {
-                //TODO FORGOT PASSWORD SCREEN GOES HERE
+                Get.offNamed('/forgot');
               },
               child: const Text('Forgot Password'),
             ),
