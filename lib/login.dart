@@ -33,7 +33,7 @@ class _LoginState extends State<Login> {
                 decoration: InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Email',
-                    hintText: 'Enter valid email id as abc@gmail.com'),
+                    hintText: 'Enter valid email - example@gmail.com'),
               ),
             ),
             const Padding(

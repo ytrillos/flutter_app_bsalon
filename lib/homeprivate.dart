@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'dart:math';
 
-class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+import 'package:get/get.dart';
+
+class Homeprivate extends StatefulWidget {
+  const Homeprivate({Key? key}) : super(key: key);
   @override
-  _StateHome createState() => _StateHome();
+  _StateHomeprivate createState() => _StateHomeprivate();
 }
 
-class _StateHome extends State<Home> {
+class _StateHomeprivate extends State<Homeprivate> {
   final numbers = List<int>.generate(4, (i) => i + 1);
 
   List<String> titles = [
@@ -27,45 +28,9 @@ class _StateHome extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    bool lTheme = true;
     return Scaffold(
       backgroundColor: const Color(0xFFFEFEFA),
-      appBar: AppBar(
-        title: const Text("Publicaciones Públicas"),
-        actions: <Widget>[
-          IconButton(
-            icon: const Icon(Icons.admin_panel_settings_outlined),
-            tooltip: 'Publicaciones Privadas',
-            onPressed: () {
-              Get.toNamed('/homeprivate');
-              /*
-              ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('This is a snackbar')));
-              */
-            },
-          ),
-          IconButton(
-            icon: const Icon(Icons.palette_outlined),
-            tooltip: 'Theme',
-            onPressed: () {
-              if (lTheme) {
-                Get.changeTheme(ThemeData.dark());
-                lTheme = false;
-              } else {
-                Get.changeTheme(ThemeData.light());
-                lTheme = true;
-              }
-            },
-          ),
-          IconButton(
-            icon: const Icon(Icons.logout),
-            tooltip: 'Logout',
-            onPressed: () {
-              Get.toNamed('/login');
-            },
-          )
-        ],
-      ),
+      appBar: AppBar(title: const Text("Publicaciones Privadas")),
       body: bodyContent(),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
