@@ -12,9 +12,9 @@ class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      // backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text("Login Page"),
+        title: const Text("Register User"),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -25,11 +25,12 @@ class _RegisterState extends State<Register> {
                 child: SizedBox(
                     width: 200,
                     height: 150,
-                    child: Image.asset('asset/images/flutter-logo.png')),
+                    child: Image.asset('asset/images/logo1.png')),
               ),
             ),
             const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 15),
+              padding:
+                  EdgeInsets.only(left: 15.0, right: 15.0, top: 15, bottom: 0),
               child: TextField(
                 decoration: InputDecoration(
                     border: OutlineInputBorder(),

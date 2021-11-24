@@ -12,7 +12,7 @@ class _ForgotState extends State<Forgot> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      // backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text("Login Page"),
       ),
@@ -25,7 +25,7 @@ class _ForgotState extends State<Forgot> {
                 child: SizedBox(
                     width: 200,
                     height: 150,
-                    child: Image.asset('asset/images/flutter-logo.png')),
+                    child: Image.asset('asset/images/logo1.png')),
               ),
             ),
             const Padding(

@@ -29,7 +29,7 @@ class _StateHome extends State<Home> {
   Widget build(BuildContext context) {
     bool lTheme = true;
     return Scaffold(
-      backgroundColor: const Color(0xFFFEFEFA),
+      //backgroundColor: const Color(0xFFFEFEFA),
       appBar: AppBar(
         title: const Text("Publicaciones Públicas"),
         actions: <Widget>[
@@ -52,7 +52,7 @@ class _StateHome extends State<Home> {
                 Get.changeTheme(ThemeData.dark());
                 lTheme = false;
               } else {
-                Get.changeTheme(ThemeData.light());
+                Get.changeTheme(ThemeData(primarySwatch: Colors.red));
                 lTheme = true;
               }
             },
@@ -61,7 +61,7 @@ class _StateHome extends State<Home> {
             icon: const Icon(Icons.logout),
             tooltip: 'Logout',
             onPressed: () {
-              Get.toNamed('/login');
+              Get.offNamed('/login');
             },
           )
         ],
@@ -69,8 +69,8 @@ class _StateHome extends State<Home> {
       body: bodyContent(),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
-        backgroundColor: Colors.blueAccent,
-        foregroundColor: Colors.white70,
+        //backgroundColor: Colors.blueAccent,
+        //foregroundColor: Colors.white70,
         onPressed: () {
           setState(() {
             numbers.insert(numbers.length, numbers.length + 1);
@@ -86,7 +86,7 @@ class _StateHome extends State<Home> {
         itemCount: numbers.length,
         itemBuilder: (context, index) {
           return Card(
-              color: const Color(0xFFE6E6FA),
+              //color: const Color(0xFFE6E6FA),
               child: ListTile(
                   contentPadding: const EdgeInsets.all(10),
                   title: Text(titles[random.nextInt(4)] + " ${numbers[index]}"),

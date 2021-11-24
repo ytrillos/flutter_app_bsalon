@@ -29,7 +29,7 @@ class _StateHomeprivate extends State<Homeprivate> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFEFEFA),
+      // backgroundColor: const Color(0xFFFEFEFA),
       appBar: AppBar(title: const Text("Publicaciones Privadas")),
       body: bodyContent(),
       floatingActionButton: FloatingActionButton(
@@ -51,7 +51,7 @@ class _StateHomeprivate extends State<Homeprivate> {
         itemCount: numbers.length,
         itemBuilder: (context, index) {
           return Card(
-              color: const Color(0xFFE6E6FA),
+              // color: const Color(0xFFE6E6FA),
               child: ListTile(
                   contentPadding: const EdgeInsets.all(10),
                   title: Text(titles[random.nextInt(4)] + " ${numbers[index]}"),
