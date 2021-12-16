@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "458454027687",
+    "project_id": "flutter-app-bsalon",
+    "storage_bucket": "flutter-app-bsalon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458454027687:android:4e811999fb340d55867a82",
+        "android_client_info": {
+          "package_name": "com.ytrillos.flutter_app_bsalon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458454027687-kv30gvjrlvm75f3adniq4umrkpu0gn91.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ytrillos.flutter_app_bsalon",
+            "certificate_hash": "c2d2a79235818ffca29ab97595fa43b68074da41"
+          }
+        },
+        {
+          "client_id": "458454027687-bvpr3hiekqdg19j5jd102lg3buolfcuh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs1RbkQ62NFA-MVbDdKYLUV4t1cdh-2z8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458454027687-bvpr3hiekqdg19j5jd102lg3buolfcuh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

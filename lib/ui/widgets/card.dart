@@ -39,7 +39,7 @@ class AppCard extends StatelessWidget {
                   child: Text(
                     title,
                     textAlign: TextAlign.center,
-                    style: Theme.of(context).textTheme.headline2,
+                    //style: Theme.of(context).textTheme.headline2,
                   ),
                 ),
                 topRightWidget != null

@@ -1,4 +1,4 @@
-// Work Pool service interface
+// Products Pool service interface
 abstract class MisionTicService {
   Future<List> fecthData({int limit, Map map});
 }
